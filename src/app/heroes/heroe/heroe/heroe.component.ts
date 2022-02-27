@@ -5,11 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './heroe.component.html',
   styleUrls: ['./heroe.component.css']
 })
-export class HeroeComponent implements OnInit {
+export class HeroeComponent {
 
-  constructor() { }
+  nombre: string = 'Ironman';
+  edad: number = 45;
 
-  ngOnInit() {
+  get nombreMayusculas(): string {
+    return this.nombre.toUpperCase();
   }
 
+  obtenerNombre(): string {
+    return `${this.nombre} - ${this.edad}`;
+  }
 }
