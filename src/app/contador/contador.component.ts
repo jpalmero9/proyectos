@@ -28,4 +28,9 @@ export class ContadorComponent {
     sumarBase(laBase: number) {
         this.numero4 += this.base;
     }
+
+    // sumar o restar un valor tomando un número base
+    sumarRestarBase(laBase: number) {
+        this.numero4 += laBase;
+    }
 }

@@ -16,5 +16,14 @@
 <div>
     <h2>Usar un sólo método pasando argumento</h2>
     <button (click)="procesar(1)">+ 1</button>
+    <strong>{{numero3}}</strong>
+    <button (click)="procesar(-1)">- 1</button>
+</div>
+<div>
+    <h2>Usando un metodo para sumar o restar usando un numero base</h2>
+    <h3>Número base: {{base}}</h3>
+    <button (click)="sumarRestarBase(base)">+ {{base}} </button>
+    <strong>{{numero4}}</strong>
+    <button (click)="sumarRestarBase(-base)">- {{base}} </button>
 
 </div>
