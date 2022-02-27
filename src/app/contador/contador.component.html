@@ -1,0 +1,20 @@
+<h2>{{titulo}}</h2>
+
+<div>
+    <button (click)="numero = numero + 1 ;">+ 1</button>
+    <strong>{{numero}}</strong>
+    <button (click)="numero = numero -1">- 1</button>
+
+</div>
+<div>
+    <h2>Usar los métodos sumar() y restar()</h2>
+    <button (click)="sumar()">+ 1</button>
+    <strong>{{numero2}}</strong>
+    <button (click)="restar()">- 1</button>
+
+</div>
+<div>
+    <h2>Usar un sólo método pasando argumento</h2>
+    <button (click)="procesar(1)">+ 1</button>
+
+</div>
